@@ -1,0 +1,19 @@
+figure {
+    text-align: center;
+}
+nav {
+    border-bottom: 1px solid black;
+}
+.menu {
+    text-align: center;
+
+}
+main {
+    border-bottom: 1px solid black;
+}
+section {
+    border-bottom: 1px solid black;
+}
+aside {
+    border-bottom: 1px solid black;
+}
