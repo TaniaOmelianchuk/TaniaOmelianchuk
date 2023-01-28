@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<form method="post">
+    <fieldset>
+        <legend>Анкета</legend>
+        <div class="main">
+            <label>
+                Повне ім'я
+                <input type="text" name="fullname" autocomplete="off" required> 
+            </label>
+
+            <label>
+                Email
+                <input type="email" name="email" autocomplete="off" required>
+            </label>
+
+            <label>
+                Пароль
+                <input type="password" name="password" minlength="4" required>
+            </label>
+
+            <label>
+                Пароль ще раз
+                <input type="password" name="password_again" required>
+            </label>
+
+            <div class="gender">
+                <p>Стать
+                    <label>
+                        <input type="radio" name="gender" value="male">чоловіча
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">жіноча
+                    </label>
+                </p>  
+            </div>
+
+            <label>
+                Вік
+                <input type="text" name="age">
+            </label>
+
+            <label>
+                Курс
+                <select id="course" name="course">
+                    <option value="front-end">Front-End</option>
+                    <option value="back-end">Back-End</option>
+                    <option value="project_management">Project Management</option>
+                    <option value="qa_manual">QA Manual</option>
+                </select> 
+            </label>
+
+            <p>Повна адреса</p>
+            <textarea name="adress" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+
+            <label>
+                <input type="checkbox" name="agreement" value="text" required>
+                Я погоджуюсь з обробкою персональних даних
+            </label>
+        </div>
+        
+        <button type="reset">Очистити форму</button>
+        <button type="submit">Зареєструватися</button>
+    </fieldset>
+</form>
+</body>
+</html>

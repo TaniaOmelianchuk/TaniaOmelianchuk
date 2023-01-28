@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+fieldset{
+    background-color: lightgray;
+}
+.gender {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
