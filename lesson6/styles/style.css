@@ -1,0 +1,189 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid #828282;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.nav_bar p {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-first_item {
+    text-decoration: none;
+    color: #828282;
+}
+
+.nav-first_item--black {
+    color: #070707;
+}
+
+#home {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    width: 300px;
+    color: #070707;
+}
+.photo {
+    width: 970px;
+    height: 387px;
+}
+#about_me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 250px;
+    background-color: #F6F6F6;
+}
+
+.main_info {
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.main_info-text {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+#skills {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.skills_info,
+.skills_info1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills_info {
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.skills_info1 {
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+#skills figure {
+    display: inline-block;
+    padding-bottom: 100px;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 250px 60px 250px;
+    background-color: #F6F6F6;
+}
+
+.portfolio1 {
+    font-weight: 700;
+    font-size: 34px;
+    padding-bottom: 35px;
+}
+
+#portfolio a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 30px;
+    color: #070707;
+    text-align: center;
+}
+
+.portfolio2 {
+    padding-top: 40px;
+}
+#image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 150px;
+    background-color: #F6F6F6;
+}
+
+#image a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 30px;
+    color: #070707;
+}
+
+#braun_landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 150px;
+    background-color: #F6F6F6;
+}
+
+#braun_landing a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 30px;
+    color: #070707;
+}
+
+#contacts {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacts h2 {
+    padding-top: 70px;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+#contacts p {
+    padding-bottom: 70px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+#contacts button {
+    background-color: #070707;
+    color: #F6F6F6;
+    font-weight: 700;
+    font-size: 18px;
+    width: 180px;
+    height: 44px;
+    border-radius: 22px;
+}
+
+#contacts a {
+    display: inline-block;
+    padding: 30px 30px 70px 30px;
+}

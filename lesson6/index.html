@@ -5,93 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Denis Novik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap"
+      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <nav>
-      <p><a href="#home">Home</a></p>
-      <p><a href="#about_me">About me</a></p>
-      <p><a href="#skills">Skills</a></p>
-      <p><a href="#portfolio">Portfolio</a></p>
-      <p><a href="#contacts">Contacts</a></p>
+    
+    <nav class="nav_bar">
+      <p><a href="#home" class="nav-first_item nav-first_item--black">Home</a></p>
+      <p><a href="#about_me" class="nav-first_item">About me</a></p>
+      <p><a href="#skills" class="nav-first_item">Skills</a></p>
+      <p><a href="#portfolio" class="nav-first_item">Portfolio</a></p>
+      <p><a href="#contacts" class="nav-first_item">Contacts</a></p>
     </nav>
 
     <main id="home">
-      <h1>Denis Novik</h1>
-      <img src="assets/images/denisnovik.jpg" alt="Denis Novik" />
+      <h1 class="title">Denis Novik</h1>
+      <img class="photo" src="assets/images/denisnovik.jpg" alt="Denis Novik" />
     </main>
 
     <article id="about_me">
-      <h2>About me</h2>
-      <p>
-        Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and
-        everything connected with it.
+      <h2 class="main_info">About me</h2>
+      <p class="main_info-text">
+        Hi, I'm Denis – UX/UI designer from Minsk. <br/>
+        I'm interested in design and everything connected with it.
       </p>
-      <p>
-        I'm studying at courses "Web and mobile design interfaces" in
-        IT-Academy.
+      <p class="main_info-text">
+        I'm studying at courses "Web and mobile design <br />
+        interfaces" in IT-Academy.
       </p>
-      <p>Ready to implement excellent projects with wonderful people.</p>
+      <p class="main_info-text">
+        Ready to implement excellent projects <br />
+        with wonderful people.
+      </p>
     </article>
 
     <section id="skills">
-      <h2>Skills</h2>
-      <p>I work in such programs as</p>
+      <h2 class="skills_info">Skills</h2>
+      <p class="skills_info1">I work in such programs as</p>
       <figure class="photoshop">
-        <img src="assets/images/ps.svg" alt="Adobe Photoshop" />
-        <figcaption>Adobe Photoshop</figcaption>
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/empty_star.svg" alt="Empty star" />
-        <img src="assets/images/empty_star.svg" alt="Empty star" />
-        <img src="assets/images/empty_star.svg" alt="Empty star" />
+        <img src="assets/images/ps1.svg" alt="Adobe Photoshop" />
       </figure>
       <figure class="adobe_il">
-        <img src="assets/images/ai.svg" alt="Adobe Illustrator" />
-        <figcaption>Adobe Illustrator</figcaption>
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/empty_star.svg" alt="Empty star" />
-        <img src="assets/images/empty_star.svg" alt="Empty star" />
+        <img src="assets/images/ad2.svg" alt="Adobe Illustrator" />
       </figure>
       <figure class="adobe_ef">
-        <img src="assets/images/ae.svg" alt="Adobe After Effects" />
-        <figcaption>Adobe After Effects</figcaption>
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/empty_star.svg" alt="Empty star" />
+        <img src="assets/images/af.svg" alt="Adobe After Effects" />
       </figure>
       <figure class="figma">
-        <img src="assets/images/figma.svg" alt="Figma" />
-        <figcaption>Figma</figcaption>
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/star-icon.svg" alt="Star" />
-        <img src="assets/images/star-icon.svg" alt="Star" />
+        <img src="assets/images/figma2.svg" alt="Figma" />
       </figure>
     </section>
 
     <aside id="portfolio">
-      <h2>Portfolio</h2>
+      <h2 class="portfolio1">Portfolio</h2>
       <figure class="fashion_store">
         <img src="assets/images/fashion-store.png" alt="My portfolio" />
         <figcaption>
-          <a href="#"> Online fashion store - Homepage</a>
+          <a href="#">
+            Online fashion store - <br />
+            Homepage
+          </a>
         </figcaption>
       </figure>
     </aside>
 
     <aside id="image">
-      <figure>
+      <figure class="portfolio2">
         <img src="assets/images/reebok.png" alt="Reebok" />
         <figcaption><a href="#">Reebok Store - Concept</a></figcaption>
       </figure>
     </aside>
 
-    <aside class="braun_landing">
+    <aside id="braun_landing">
       <figure>
         <img src="assets/images/braun-landing.png" alt="Braun Landing" />
         <figcaption><a href="#"> Braun Landing Page - Concept</a></figcaption>
@@ -100,7 +89,10 @@
 
     <footer id="contacts">
       <h2>Contacts</h2>
-      <p>Want to know more or just chat? You are welcome!</p>
+      <p>
+        Want to know more or just chat? <br />
+        You are welcome!
+      </p>
       <button type="button">Send message</button>
       <figure>
         <a href="#"><img src="assets/images/linkedin.svg" alt="LinkedIn" /></a>
@@ -108,7 +100,11 @@
         <a href="#"><img src="assets/images/behance.svg" alt="Behance" /></a>
         <a href="#"><img src="assets/images/dribbble.svg" alt="Dribble" /></a>
       </figure>
-      <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
+      <p>
+        Like me on <br/>
+        LinkedIn, Instagram, Behance, <br/>
+        Dribble
+      </p>
     </footer>
   </body>
 </html>
