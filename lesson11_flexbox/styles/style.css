@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.header__wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header__nav{
+    display: inline-block;
+}
+
+.header__nav-items {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header__nav-items:last-child {
+    margin: 0;
+}
+
+.header__nav-items a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #2F281E;
+}
+
+.header__nav-items a:hover {
+    color:  #FF9900;;
+}
+
+.header__buttons {
+    display: inline-block;
+}
+
+.button {
+    width: 110px;
+    height: 46px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    color: #2F281E;
+}
+
+.button__sign_in {
+    background-color: transparent;
+    border: 1px solid #BCD0E5;
+    
+}
+
+.button__sign_up {
+    background-color: #FF9900;
+    border: #FF9905;
+    color: #FFFFFF;
+}
+
+section {
+    display: flex;
+}
+
+.section__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 420px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 120px;
+}
+
+.main__info--items h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    padding-bottom: 30px;
+}
+
+.main__info--items p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 20px;
+}
+
+.button__get_started {
+    width: 180px;
+    height: 50px;
+    border:  #FF9900;
+    background-color: #FF9900;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 105px;
+}
+
+.add__wrapper {
+    width: 100%;
+    height: 510px;
+    position: relative;
+}
+
+.add__wrapper h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.add__wrapper img{
+    width: 100%;
+    position: absolute;
+}
+
+.main__wrapper {   
+    width: 1200px;
+    height: 390px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.add__info {
+    position: absolute; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1200px;
+    height: 175px;
+}
+
+.add__item img {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.add__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.add__item h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #2F281E;
+    padding-bottom: 15px;
+}
+
+.add__item p {
+    font-weight: 500;
+    size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.add__button {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    border-top: 1px solid rgba(188, 208, 229, 0.496913);
+}
+
+.wrapper__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1200px;
+    height: 209px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F281E;
+}
+
+.footer__nav-items a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #544837;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+.footer__nav-items a:hover {
+    color: #FF9900;
+}
+
+.footer__nav-items:first-of-type {
+    padding-top: 30px;
+}
+
+.footer__nav-items {
+    padding-bottom: 15px;
+}
+
+.footer__nav-items:last-child {
+    padding-bottom: 0;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 210px;
+}
+
+.footer__input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #BCD0E5;
+    margin: 20px 0;
+    padding: 0;
+}
+
+::placeholder {
+    color: #BCD0E5;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.button__sign_up_now {
+    width: 180px;
+    height: 50px;
+    background-color: #FF9900;
+    border: 1px solid #FF9900;;
+    border-radius: 4px solid #FF9900;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
