@@ -1,0 +1,110 @@
+@import url(../assets/fonts/Francois_One/francois_one.css);
+@import url(../assets/fonts/Farro/farro.css);
+@import url(../assets/fonts/PT_Sans/ptsans.css);
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap');
+
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.header__wrapper {
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header__nav h3 {
+    font-family: 'Tourney', cursive;
+    font-size: 22px;
+    line-height: 18px;
+    font-weight: 600;
+} 
+
+.header__navigation ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__nav--item a{
+    text-decoration: none;
+    font-family: 'Staatliches', cursive;
+    color: #000000;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+
+.main__wrapper {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.main__title {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.main__title h2 {
+    font-family: 'Francois One', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+}
+
+.main__title p {
+    font-family: 'Farro', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.main__text {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.main__text--underlined {
+    text-decoration: underline;
+}
+
+.main__text--bold{
+    font-weight: 700;
+}
+
+.main__text--italic {
+    font-style: italic;
+}
+
+.main__text--grey {
+    background-color: #DADADA;
+}
+
+.main__text--last {
+    margin-bottom: 90px;
+}
+
+main p,
+main li{
+    margin-bottom: 40px;
+}
