@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <div class="main__wrapper">
+            <form method="post">
+                <h1 class="main__title">Create an Account</h1>
+                
+                <div class="item__wrapper">
+                    <div class="form__item">
+                        <label for="first_name" class="form__label">
+                            First name
+                        </label>
+                        <input id="first_name" type="text" class="form__input">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="last_name" class="form__label">
+                            Last name
+                        </label>
+                        <input id="last_name" type="text" class="form__input">
+                    </div>
+                </div>
+
+                <div class="form__item">
+                    <label for="email" class="form__label">
+                        E-mail
+                    </label>
+                    <input id="email" type="email" class="form__input form__input--email">
+                    <span>We'll never share your email with anyone else.</span>
+                </div>
+
+                <div class="radiobutton__wrapper">
+                    <label class="radiobutton__container">Male
+                        <input type="radio" name="radio" class="radiobutton__input">
+                        <span class="checkmark"></span>
+                    </label>
+        
+                    <label class="radiobutton__container">Female
+                        <input type="radio" name="radio" class="radiobutton__input">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="item__wrapper">
+                    <div class="form__item">
+                        <label for="countries" class="form__label"> 
+                            Country
+                        </label>
+                            <select id="countries" name="countries" class="form__input">
+                                <option value="select" disabled selected hidden>Select</option>
+                                <option value="ukraine">Ukraine</option>
+                                <option value="poland">Poland</option>
+                                <option value="germany">Germany</option>
+                                <option value="turkey">Turkey</option>
+                                <option value="france">France</option>
+                                <option value="theus">The United States</option>
+                                <option value="england">England</option>
+                                <option value="spain">Spain</option>
+                                <option value="italy">Italy</option>
+                                <option value="hungary">Hungary</option>
+                            </select>
+                    </div>
+                    
+                    <div class="form__item">
+                        <label for="city" class="form__label">
+                            City
+                        </label>
+                        <input id="city" type="text" class="form__input">
+                    </div>
+                </div>
+
+                <button type="submit" class="button__sign-up">Sign Up</button>
+
+                <p class="form__text">By clicking the 'Sign Up' button, you confirm that you accept our <br>
+                    <a href="#" class="form__text--decorated">Terms of Use</a> and <a href="#" class="form__text--decorated">Privacy Policy</a>.</p>
+            </form>
+            <div class="main__border"></div>
+
+            <div class="main__log-in">
+                <p>Have an account?</p>
+                <a href="#">
+                    Log In
+                </a>
+            </div>
+        </div>
+    </main> 
+</body>
+</html>
