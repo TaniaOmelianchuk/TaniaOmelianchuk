@@ -1,51 +1,42 @@
-const seconds = +prompt("Введіть кількість секунд:");
+const MS_PER_SECOND = 1000;
+const MS_PER_MINUTE = 60000
+const MS_PER_HOUR = 3600000;
 
-const minutes = +prompt("Введіть кількість хвилин:");
-
-const hours = +prompt("Введіть кількість годин:");
-
-const time = {
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-
-//1
-showTime() {
-    return `${this.hours.toString()}:${this.minutes.toString()}:${this.seconds.toString()}`;
-    },
-
-//2 
-addSeconds(seconds) {
-    this.seconds += seconds;
-    this.minutes += Math.floor(this.seconds / 60);
-    this.seconds %= 60;
-    this.hours += Math.floor(this.minutes / 60);
-    this.minutes %= 60;
-    this.hours %= 24;
-    return seconds;
-},
-
-//3 
-addMinutes(minutes) {
-    this.minutes += minutes;
-    this.hours += Math.floor(this.minutes / 60);
-    this.minutes %= 60;
-    this.hours %= 24;
-    return minutes;
-},
-
-//4
-addHours(hours) {
-    this.hours += hours;
-    this.hours %= 24;
-    return hours;
-}
+const DataType = {
+    SECONDS: "SECONDS",
+    MINUTES: "MINUTES",
+    HOURS: "HOURS"
 }
 
-time.addSeconds(seconds);
+function buildDate() {
+    let date = new Date();
+    console.log(date);
+    let changedSeconds = +prompt("Введіть кількість секунд:");
+    let changedMinutes = +prompt("Введіть кількість хвилин:");
+    let changedHours = +prompt("Введіть кількість годин:");
+    date = changeDate(date, changedSeconds, DataType.SECONDS);
+    date = changeDate(date, changedMinutes, DataType.MINUTES);
+    date = changeDate(date, changedHours, DataType.HOURS);
+    console.log(date);
+}
 
-time.addMinutes(minutes);
+function changeDate(date, time, dataType) {
+    const msCount = getMilliseconds(dataType);
+    return new Date(date.getTime() + time * msCount);
+}
 
-time.addHours(hours);
+function getMilliseconds(dataType) {
+    switch(dataType) {
+        case DataType.SECONDS :
+            return MS_PER_SECOND;
+            break;
+        case DataType.MINUTES :
+            return MS_PER_MINUTE;
+            break;
+        case DataType.HOURS :
+            return MS_PER_HOUR;
+            break;
+    }
+}
 
-alert(time.showTime());
+buildDate();
