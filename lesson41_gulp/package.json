@@ -1,0 +1,16 @@
+{
+  "name": "lesson41_gulp",
+  "version": "0.0.1",
+  "author": "Tania",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
